@@ -87,13 +87,11 @@ body {
 .about-textbox h1 {
     font-size: 62px;
     font-weight: 500;
-
 }
 
 .about-textbox p {
     font-size: 36px;
     font-weight: 400;
-
 }
 
 .services-container {
@@ -114,14 +112,10 @@ body {
     font-weight: 300;
 }
 
-/* work below here */
-
 .services-list {
-    
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, 750px);
-
     justify-content: space-around;;
     text-align: center;
 }
@@ -129,22 +123,40 @@ body {
 .service-image {
     width: 612px;
     height: 367px;
-
     border: 3px solid black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .services-list li {
-    
     margin-top: 50px;
 }
 
 .services-list li p {
-    
     width: 50%;
     margin: 0 auto; /* centers text */
 }
 
+.faq-container {
+    position: static;
+    text-align: center;
+}
 
+/* work below here */
 
+.faq-container h1 {
+    font-size: 62px;
+    font-weight: 500;
+}
+
+.faq-container ol {
+    
+    display: inline-block;
+    text-align: left;
+    max-width: 2000px;
+
+    padding: 25px 50px;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: 400;
+}
