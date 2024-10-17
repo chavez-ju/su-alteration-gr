@@ -97,7 +97,6 @@ body {
 }
 
 .services-container {
-    border: 3px solid black;
     position: static;
     padding: 100px;
 }
@@ -118,28 +117,33 @@ body {
 /* work below here */
 
 .services-list {
-    border: 3px solid black;
+    
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 750px);
 
     justify-content: space-around;;
     text-align: center;
 }
 
 .service-image {
-    width: 707px;
-    height: 424px;
+    width: 612px;
+    height: 367px;
+
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .services-list li {
-    border: 3px solid black;
+    
+    margin-top: 50px;
 }
-.services-list li p {
-    border: 3px solid black;
-    width: 50%;
-    margin: 0 auto;
 
+.services-list li p {
+    
+    width: 50%;
+    margin: 0 auto; /* centers text */
 }
 
 
