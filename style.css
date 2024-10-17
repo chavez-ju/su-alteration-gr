@@ -84,7 +84,7 @@ body {
     text-align: center;
 }
 
-.about-textbox h2 {
+.about-textbox h1 {
     font-size: 62px;
     font-weight: 500;
 
@@ -95,5 +95,52 @@ body {
     font-weight: 400;
 
 }
+
+.services-container {
+    border: 3px solid black;
+    position: static;
+    padding: 100px;
+}
+
+.services-container h1, h3 {
+    text-align: center;
+}
+.services-container h1 {
+    font-size: 62px;
+    font-weight: 500;
+}
+
+.services-container h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* work below here */
+
+.services-list {
+    border: 3px solid black;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+
+    justify-content: space-around;;
+    text-align: center;
+}
+
+.service-image {
+    width: 707px;
+    height: 424px;
+}
+
+.services-list li {
+    border: 3px solid black;
+}
+.services-list li p {
+    border: 3px solid black;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
 
 
