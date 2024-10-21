@@ -145,8 +145,10 @@ body {
 }
 
 .faq-container {
+    
     position: static;
     text-align: center;
+    padding: 100px 0px;
 }
 
 .faq-container h1 {
@@ -159,7 +161,7 @@ body {
     text-align: left;
     max-width: 2000px;
 
-    padding: 25px 50px;
+    padding: 25px 75px;
     list-style-type: none;
     font-size: 30px;
     font-weight: 400;
@@ -170,17 +172,30 @@ body {
 footer {
     background-color: rgba(0, 0, 139, 0.8);
     padding-bottom: 50px;
+    border-top: 3px solid black;
 }
 
 .footer-container {
-    
     position: static;
     text-align: center;
 }
 
 .store-info {
     color: #fff;
-    padding: 100px 0;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+
+.store-info li h4 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.store-info li p {
+    font-size: 18px;
 }
 
 .store-info img {
@@ -198,7 +213,7 @@ footer {
     margin: 0 auto;
     padding: 40px 20px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     border-radius: 10px;
 }
 
