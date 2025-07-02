@@ -168,6 +168,16 @@ body {
     font-weight: 400;
 }
 
+.faq-container img {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    width: 65%;
+    height: auto;
+    margin-top: 50px;
+}
+
 footer {
     background-color: rgba(0, 0, 139, 0.8);
     padding-bottom: 50px;
