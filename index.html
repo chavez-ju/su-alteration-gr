@@ -1,99 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Juan Chavez">
-    <meta name="description" content="Business site for Su Alterations">
-    <title>Su Alterations | Grand Rapids, MI</title>
-    <link rel="icon" href="images/logo.png" type="image/x-icon?">
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Juan Chavez" />
+    <meta name="description" content="Su Alterations | Grand Rapids MI tailoring and alterations" />
+
+    <title>Su Alterations | Grand Rapids</title>
+
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Carattere&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
     <header>
-        <div class="navbar-container">
-            <a href="#" class="logo">Su Alterations</a>
-            <nav class="navbar">
-                <a href="#top">About</a>
-                <a href="#services-jump">Services</a>
-                <a href="#faq-jump">FAQ</a>
-            </nav>
-        </div>
+      <div class="container nav-wrapper">
+        <a href="#" class="logo">Su Alterations</a>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <nav id="nav-menu">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <div class="about-container">
-            <img src="images/store.png" class="store-image" alt="Store Picture">
-            <div class="about-textbox">
-                <br><br><p>Su Alterations, in the <b>Woodland Mall</b>, is a family-owned business that has been in operation for over 30 years. We provide quick, quality work on all kinds of garments. Please call <a href="tel: (616) 975-7877">(616) 975-7877</a> for any inquiries regarding alterations and garments. For inquries on pricing, please bring items in-store.</p>
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <img src="images/store.png" alt="Su Alterations storefront" />
+
+          <div class="about-text">
+            <h1>Located in Grand Rapids, MI</h1>
+
+            <p>Su Alterations, located inside <strong>Woodland Mall</strong>, is a family-owned business with over 30 years of experience providing high-quality alterations and tailoring services.</p>
+
+            <p>
+              For inquiries please call
+              <a href="tel:16169757877">(616) 975-7877</a>. Pricing quotes are available in-store once we see the garment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2 class="section-title">Alteration & Tailoring Services</h2>
+
+          <p class="section-subtitle">We alter a variety of garments. Bring items in-store to see what we can do.</p>
+
+          <div class="service-grid">
+            <div class="service-card">
+              <img src="images/bridal.png" />
+              <h3>Bridal</h3>
             </div>
-        </div>
 
-        <div class="services-container" id="services-jump">
-            <h1>Alteration and Tailoring Services</h1>
-            <h3><em>We do a variety of items and garments. Please bring any items to see if we’re able to alter or mend them.</em></h3>
-            <ul class="services-list">
-                <li><img src="images/bridal.png" class="service-image" alt="Bridal Alteration">
-                    <h2>Bridal</h2>
-                </li>
-                <li><img src="images/formal.png" class="service-image" alt="Formal Alteration">
-                    <h2>Formal</h2>
-                </li>
-                <li><img src="images/casual.png" class="service-image" alt="Casual Tailoring">
-                    <h2>Casual</h2>
-                </li>
-                <li><img src="images/outerwear.png" class="service-image" alt="Outerwear Tailoring">
-                    <h2>Outerwear Alterations</h2>
-                </li>
-                <li><img src="images/curtains.png" class="service-image" alt="Curtains">
-                    <h2>Curtains</h2>
-                </li>
-                <li><img src="images/drycleaning.png" class="service-image" alt="Dry Cleaning">
-                    <h2>Dry Cleaning</h2>
-                    <p><em>Dry cleaning is off-site and will take about 3-5 days for <b>most</b> items.</em></p>
-                </li>
-            </ul>
-        </div>
+            <div class="service-card">
+              <img src="images/formal.png" />
+              <h3>Formal</h3>
+            </div>
 
-        <div class="faq-container" id="faq-jump">
-            <h1>Frequently Asked Questions</h1>
-            <ol class="faq-list">
-                <li><p><b>Are appointments needed?</b> Appointments are not needed.</p></li>
-                <li><p><b>How long does an alteration take?</b> Alteration time depends on the garment and type of alterations.</p></li>
-                <li><p><b>What is the cost for an alteration?</b> The cost depends on the type of garment and alteration. Please bring in the garment in-store for a free quote.
-                </p></li>
-                <li><p><b>Do you provide measurements?</b> We do <b>not</b> provide services for measurements.</p></li>
-                <li><p><b>Do you do embroidery?</b> We do <b>not</b> provide services for embroidery.</p></li>
-                <li><p><b>Are heels required when trying on my dress?</b> If you’re wearing any sort of heels with your dress, then they’re required when trying on your garment.</p></li>
-                <li><p><b>When are your busiest seasons?</b> April - May. Please bring in any prom or bridal dresses as early as possible, or at least a week before the event.</p></li>
-                <li><p><b>Do you do custom projects?</b> All custom projects must be seen by Su (Head Seamstress) and only during December and January.</p></li>
-                <li><p><b>Do I have to pay up front?</b> Payment is required on the drop-off of garments.</li>
-                <li><p><b>Where is the store entrance?</b> Su Alterations is located inside Woodland Mall, near Macy’s. Please refer to the pictures below.</li>
-            </ol>
-            <img src="images/su-alterations-outside.jpg" alt="outside pic">
-            <img src="images/su-alterations-outside-macys.jpg" alt="outside pic near Macy's">
+            <div class="service-card">
+              <img src="images/casual.png" />
+              <h3>Casual</h3>
+            </div>
+
+            <div class="service-card">
+              <img src="images/outerwear.png" />
+              <h3>Outerwear</h3>
+            </div>
+
+            <div class="service-card">
+              <img src="images/curtains.png" />
+              <h3>Curtains</h3>
+            </div>
+
+            <div class="service-card">
+              <img src="images/drycleaning.png" />
+              <h3>Dry Cleaning</h3>
+              <p>Dry cleaning is off-site and usually takes 3-5 days.</p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h4>Are appointments required?</h4>
+              <p>No appointments are needed.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>How long do alterations take?</h4>
+              <p>Timing depends on the garment and alteration type.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>How much do alterations cost?</h4>
+              <p>Please bring garments in-store for a free quote.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Do you provide measurements?</h4>
+              <p>No measurement services are provided.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Do you do embroidery?</h4>
+              <p>No embroidery services.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Are heels required for dress fittings?</h4>
+              <p>If you will wear heels with your dress, please bring them.</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>When are your busiest seasons?</h4>
+              <p>April–May (prom and wedding season).</p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Do you do custom projects?</h4>
+              <p>Custom projects must be approved by Su during December or January.</p>
+            </div>
+          </div>
+
+          <div class="faq-images">
+            <img src="images/su-alterations-outside.jpg" />
+            <img src="images/su-alterations-outside-macys.jpg" />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <ol class="store-info">
-                <li><h4>Hours</h4><p>Monday-Saturday: 11:00 AM - 8:00 PM EST<br>Sunday: 12:00 AM - 6:00 PM EST<br><em>Hours may vary during Holidays</em></p><h4><br>Location</h4><p>3195 28th St SE, Grand Rapids, MI 49512<br>(Located inside Woodland Mall, near Macy’s)</p></li>
-                <li><h4>Contact Information</h4><p>Business Phone: <a href="tel: (616) 975-7877">(616) 975-7877</a></p><h4><br><br>Stay Connected with us!</h4><a href="https://www.facebook.com/profile.php?id=100043147221610"><img src="images/facebook.png" alt="Facebook Logo"></a></li>
-            </div>
-            <div class="map-container">
-                <h4>Explore Our Location</h4>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2921.92165292598!2d-85.59192412264406!3d42.91669329975196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88184d39194b1905%3A0x3a7eaed0b9eca964!2sSu%20Alteration!5e0!3m2!1sen!2sus!4v1709949154163!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <a href="https://maps.app.goo.gl/vCdhsp8taKPErNuZ9" class="button" target="_blank">
-                    View on Google Maps
-                </a>
-                <div class="copyright-text">
-                    &copy; 2024 Google Maps on site. All rights reserved
-                </div>
-            </div>
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <h3>Hours</h3>
+
+          <p>
+            Monday–Saturday: 11:00 AM – 8:00 PM<br />
+            Sunday: 12:00 PM – 6:00 PM
+          </p>
+
+          <h3>Location</h3>
+
+          <p>
+            3195 28th St SE<br />
+            Woodland Mall (Near Macy’s)<br />
+            Grand Rapids, MI 49512
+          </p>
+
+          <h3>Phone</h3>
+
+          <p>
+            <a href="tel:16169757877">(616) 975-7877</a>
+          </p>
+
+          <h3>Stay Connected With Us!</h3>
+
+          <a href="https://www.facebook.com/profile.php?id=100043147221610" target="_blank">
+            <img src="images/facebook.png" alt="Facebook" />
+          </a>
         </div>
+
+        <div class="footer-map">
+          <div class="map-card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2921.92165292598!2d-85.59192412264406!3d42.91669329975196!2m3!1f0!3f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88184d39194b1905%3A0x3a7eaed0b9eca964!2sSu%20Alteration!5e0!3m2!1sen!2sus" loading="lazy"> </iframe>
+
+            <a class="map-button" href="https://maps.app.goo.gl/vCdhsp8taKPErNuZ9" target="_blank"> View on Google Maps </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Su Alterations</p>
+      </div>
     </footer>
 
-</body>
+    <script>
+      const menu = document.getElementById("mobile-menu");
+      const nav = document.getElementById("nav-menu");
+
+      menu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+
+        menu.textContent = nav.classList.contains("active") ? "✕" : "☰";
+      });
+    </script>
+  </body>
 </html>
