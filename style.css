@@ -96,7 +96,7 @@ nav a:hover::after {
 .about-grid img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
 }
 
 .about-text h1 {
@@ -165,6 +165,7 @@ nav a:hover::after {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 .faq-images {
@@ -198,12 +199,12 @@ footer {
 
 .footer-info h3 {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer-info p {
   margin-top: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer-info a[href^="tel"] {
@@ -250,10 +251,10 @@ footer {
 }
 
 .footer-bottom {
-  text-align: center;
   margin-top: 40px;
   font-size: 14px;
   opacity: 0.8;
+  text-align: left;
 }
 
 /* MOBILE */
@@ -292,6 +293,18 @@ footer {
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .map-card {
+    text-align: center;
   }
 
   .service-grid {
