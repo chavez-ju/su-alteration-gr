@@ -16,23 +16,19 @@
   </head>
 
   <body>
-    <div class="top-wrapper">
-      <div class="announcement-bar">Accepting Prom Dresses, Bridal Gowns, and Wedding Dresses Now!</div>
+    <header>
+      <div class="container nav-wrapper">
+        <a href="#" class="logo">Su Alterations</a>
 
-      <header>
-        <div class="container nav-wrapper">
-          <a href="#" class="logo">Su Alterations</a>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
 
-          <div class="menu-toggle" id="mobile-menu">☰</div>
-
-          <nav id="nav-menu" aria-label="Main navigation">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#faq">FAQ</a>
-          </nav>
-        </div>
-      </header>
-    </div>
+        <nav id="nav-menu">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <section id="about" class="section">
@@ -60,32 +56,32 @@
 
           <div class="service-grid">
             <div class="service-card">
-              <img src="images/bridal.png" alt="Bridal alterations" />
+              <img src="images/bridal.png" />
               <h3>Bridal</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/formal.png" alt="Formal alterations" />
+              <img src="images/formal.png" />
               <h3>Formal</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/casual.png" alt="Casual alterations" />
+              <img src="images/casual.png" />
               <h3>Casual</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/outerwear.png" alt="Outerwear alterations" />
+              <img src="images/outerwear.png" />
               <h3>Outerwear</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/curtains.png" alt="Curtain alterations" />
+              <img src="images/curtains.png" />
               <h3>Curtains</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/drycleaning.png" alt="Dry cleaning" />
+              <img src="images/drycleaning.png" />
               <h3>Dry Cleaning</h3>
               <p>Dry cleaning is off-site and usually takes 3-5 days.</p>
             </div>
@@ -188,12 +184,11 @@
       </div>
 
       <div class="container footer-bottom">
-        <p>© <span id="year"></span> Su Alterations. Some rights reserved.</p>
+        <p>© 2024 Su Alterations. Some rights reserved.</p>
       </div>
     </footer>
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
       const menu = document.getElementById("mobile-menu");
       const nav = document.getElementById("nav-menu");
 
