@@ -16,19 +16,23 @@
   </head>
 
   <body>
-    <header>
-      <div class="container nav-wrapper">
-        <a href="#" class="logo">Su Alterations</a>
+    <div class="top-wrapper">
+      <div class="announcement-bar">Accepting Prom Dresses, Bridal Gowns, and Wedding Dresses Now!</div>
 
-        <div class="menu-toggle" id="mobile-menu">☰</div>
+      <header>
+        <div class="container nav-wrapper">
+          <a href="#" class="logo">Su Alterations</a>
 
-        <nav id="nav-menu">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-      </div>
-    </header>
+          <div class="menu-toggle" id="mobile-menu">☰</div>
+
+          <nav id="nav-menu" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </div>
+      </header>
+    </div>
 
     <main>
       <section id="about" class="section">
@@ -56,32 +60,32 @@
 
           <div class="service-grid">
             <div class="service-card">
-              <img src="images/bridal.png" />
+              <img src="images/bridal.png" alt="Bridal alterations" />
               <h3>Bridal</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/formal.png" />
+              <img src="images/formal.png" alt="Formal alterations" />
               <h3>Formal</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/casual.png" />
+              <img src="images/casual.png" alt="Casual alterations" />
               <h3>Casual</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/outerwear.png" />
+              <img src="images/outerwear.png" alt="Outerwear alterations" />
               <h3>Outerwear</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/curtains.png" />
+              <img src="images/curtains.png" alt="Curtain alterations" />
               <h3>Curtains</h3>
             </div>
 
             <div class="service-card">
-              <img src="images/drycleaning.png" />
+              <img src="images/drycleaning.png" alt="Dry cleaning" />
               <h3>Dry Cleaning</h3>
               <p>Dry cleaning is off-site and usually takes 3-5 days.</p>
             </div>
@@ -184,18 +188,50 @@
       </div>
 
       <div class="container footer-bottom">
-        <p>© 2024 Su Alterations. Some rights reserved.</p>
+        <p>© <span id="year"></span> Su Alterations. Some rights reserved.</p>
       </div>
     </footer>
 
     <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
       const menu = document.getElementById("mobile-menu");
       const nav = document.getElementById("nav-menu");
+      const header = document.querySelector(".top-wrapper");
 
+      // Toggle menu
       menu.addEventListener("click", () => {
         nav.classList.toggle("active");
-
         menu.textContent = nav.classList.contains("active") ? "✕" : "☰";
+      });
+
+      // Perfect scroll behavior
+      document.querySelectorAll("#nav-menu a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const isMenuOpen = nav.classList.contains("active");
+
+          // ONLY override scroll if menu is open
+          if (isMenuOpen) {
+            e.preventDefault();
+
+            const target = document.querySelector(link.getAttribute("href"));
+
+            // Close menu first
+            nav.classList.remove("active");
+            menu.textContent = "☰";
+
+            setTimeout(() => {
+              const headerHeight = header.offsetHeight;
+              const offsetTop = target.offsetTop - headerHeight + 25;
+
+              window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth",
+              });
+            }, 50);
+          }
+          // If menu is closed → let default anchor behavior happen (no JS scroll)
+        });
       });
     </script>
   </body>
