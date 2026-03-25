@@ -1,3 +1,7 @@
+:root {
+  --nav-blue: rgba(0, 0, 139, 0.9);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +54,7 @@ body {
 /* HEADER */
 
 header {
-  background: rgba(0, 0, 139, 0.9);
+  background: var(--nav-blue);
 }
 
 .nav-wrapper {
@@ -70,6 +74,7 @@ header {
 
 nav {
   display: flex;
+  background: var(--nav-blue);
 }
 
 nav a {
