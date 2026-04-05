@@ -231,6 +231,11 @@ footer {
   font-size: 14px;
 }
 
+.footer-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .footer-info img {
   width: 32px;
   height: 32px;
